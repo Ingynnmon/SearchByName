@@ -53,6 +53,12 @@ class MainActivity : AppCompatActivity() {
     private fun bindData(response:LatestMealResponse) {
         mAdapter = MyAdapter(response.meals!!,this,object : ItemClickListener{
             override fun onItemClicked(id: String) {
+
+                //To DetailActivity with id Data
+                val intent = Intent(applicationContext, DetailActivity::class.java)
+                intent.putExtra("id", id)
+                startActivity(intent)
+
                 Toast.makeText(applicationContext,id,Toast.LENGTH_SHORT).show()
             }
         })

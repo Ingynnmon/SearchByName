@@ -10,4 +10,7 @@ interface MealService {
 
     @GET("api/json/v1/1/search.php")
     fun searchMeals(@Query("s") keyword : String): Call<LatestMealResponse>
+
+    @GET("api/json/v1/1/lookup.php")
+    fun getDetailbyId(@Query("i") keyword: String): Call<LatestMealResponse>
 }
