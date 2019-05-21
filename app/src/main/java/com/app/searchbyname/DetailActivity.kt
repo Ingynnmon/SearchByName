@@ -28,7 +28,7 @@ class DetailActivity : AppCompatActivity(){
         val bundle :Bundle?= intent.extras
         val message = bundle!!.getString("id")
         val strUser: String = intent.getStringExtra("id")
-        Toast.makeText(applicationContext,"id : ${message}",Toast.LENGTH_SHORT).show()
+        //Toast.makeText(applicationContext,"id : ${message}",Toast.LENGTH_SHORT).show()
 
         text_detail = findViewById(R.id.text_detail)
         text_detail.setText(message)

@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("id", id)
                 startActivity(intent)
 
-                Toast.makeText(applicationContext,id,Toast.LENGTH_SHORT).show()
+                //Toast.makeText(applicationContext,id,Toast.LENGTH_SHORT).show()
             }
         })
         recyclerView.adapter = mAdapter
